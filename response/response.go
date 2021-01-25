@@ -7,7 +7,7 @@ type Response struct {
 	Code    int         `json:"code"`
 	Status  string      `json:"status"`
 	Message string      `json:"message"`
-	Data    interface{} `json:"data"`
+	Data    interface{} `json:"data,omitempty"`
 }
 
 // Ok return response with status 200 OK
